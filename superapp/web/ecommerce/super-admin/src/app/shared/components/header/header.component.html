@@ -1,0 +1,21 @@
+<header class="main-header">
+  <div class="logo">
+    <a routerLink="/">SuperApp</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a routerLink="/home/quick-commerce">Quick Commerce</a></li>
+      <li><a routerLink="/home/ecom-tab">E-Commerce</a></li>
+    </ul>
+  </nav>
+  <div class="header-actions">
+    <div *ngIf="isLoggedIn" class="user-menu">
+      <a routerLink="/profile/dashboard">Profile</a>
+      <button (click)="logout()">Logout</button>
+    </div>
+    <div *ngIf="!isLoggedIn" class="auth-menu">
+      <a routerLink="/auth/login">Login</a>
+    </div>
+    <a routerLink="/cart/quick-full" class="cart-icon">Cart</a>
+  </div>
+</header>

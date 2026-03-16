@@ -1,0 +1,38 @@
+{
+  "collection": "restaurants",
+  "fields": {
+    "restaurant_id": { "type": "String", "unique": true, "required": true },
+    "vendor_id": { "type": "ObjectId", "ref": "users", "required": true },
+    "name": { "type": "String", "required": true },
+    "cuisine_type": [{ "type": "String" }],
+    "menu": [
+      {
+        "category": { "type": "String" },
+        "items": [
+          {
+            "item_id": { "type": "String" },
+            "name": { "type": "String" },
+            "description": { "type": "String" },
+            "price": { "type": "Number" },
+            "image_url": { "type": "String" },
+            "is_available": { "type": "Boolean", "default": true }
+          }
+        ]
+      }
+    ],
+    "location": {
+      "address": { "type": "String" },
+      "coordinates": {
+        "lat": { "type": "Number" },
+        "lng": { "type": "Number" }
+      }
+    },
+    "opening_hours": {
+      "monday": { "open": "String", "close": "String" },
+      "tuesday": { "open": "String", "close": "String" }
+      // ... rest of the days
+    },
+    "rating": { "type": "Number", "default": 0 },
+    "total_reviews": { "type": "Number", "default": 0 }
+  }
+}

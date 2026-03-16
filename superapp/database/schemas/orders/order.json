@@ -1,0 +1,36 @@
+{
+  "collection": "orders",
+  "fields": {
+    "order_id": { "type": "String", "unique": true, "required": true },
+    "customer_id": { "type": "ObjectId", "ref": "users", "required": true },
+    "service_type": { "type": "String", "enum": ["ecommerce", "food", "healthcare", "local", "ride"], "required": true },
+    "items": [
+      {
+        "product_id": { "type": "ObjectId", "ref": "products" },
+        "quantity": { "type": "Number" },
+        "price": { "type": "Number" }
+      }
+    ],
+    "total_amount": { "type": "Number", "required": true },
+    "payment_status": { "type": "String", "enum": ["pending", "paid", "failed"], "default": "pending" },
+    "order_status": { "type": "String", "enum": ["placed", "confirmed", "processing", "out-for-delivery", "delivered", "cancelled"], "default": "placed" },
+    "delivery_address": {
+      "address_line1": { "type": "String" },
+      "city": { "type": "String" },
+      "state": { "type": "String" },
+      "zip_code": { "type": "String" },
+      "coordinates": {
+        "lat": { "type": "Number" },
+        "lng": { "type": "Number" }
+      }
+    },
+    "tracking": {
+      "driver_id": { "type": "ObjectId", "ref": "users" },
+      "estimated_delivery": { "type": "Date" },
+      "actual_delivery": { "type": "Date" }
+    },
+    "metadata": { "type": "Object" },
+    "created_at": { "type": "Date", "default": "now" },
+    "updated_at": { "type": "Date", "default": "now" }
+  }
+}

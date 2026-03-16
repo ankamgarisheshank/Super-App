@@ -1,0 +1,25 @@
+{
+  "collection": "drivers",
+  "fields": {
+    "driver_id": { "type": "ObjectId", "ref": "users", "unique": true, "required": true },
+    "vehicle": {
+      "type": { "type": "String", "enum": ["car", "bike", "van"] },
+      "model": { "type": "String" },
+      "license_plate": { "type": "String", "unique": true },
+      "color": { "type": "String" }
+    },
+    "license_number": { "type": "String", "unique": true },
+    "status": { "type": "String", "enum": ["online", "offline", "on-trip", "on-delivery"], "default": "offline" },
+    "live_location": {
+      "coordinates": {
+        "lat": { "type": "Number" },
+        "lng": { "type": "Number" }
+      },
+      "last_updated": { "type": "Date" }
+    },
+    "earnings": {
+      "total": { "type": "Number", "default": 0 },
+      "currency": { "type": "String", "default": "USD" }
+    }
+  }
+}
