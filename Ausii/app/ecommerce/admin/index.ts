@@ -1,0 +1,21 @@
+// Angular Admin Core Index
+export { AdminDashboardComponent } from './AdminDashboard.component';
+export { OrderManagementComponent } from './OrderManagement.component';
+export { ProductInventoryComponent } from './ProductInventory.component';
+export { CategoryManagementComponent } from './CategoryManagement.component';
+export { VendorManagementComponent } from './VendorManagement.component';
+export { CustomerManagementComponent } from './CustomerManagement.component';
+export { PromoCampaignsComponent } from './PromoCampaigns.component';
+export { FlashSaleControlsComponent } from './FlashSaleControls.component';
+export { RefundsReviewComponent } from './RefundsReview.component';
+export { DeliveryZoneConfigComponent } from './DeliveryZoneConfig.component';
+export { PaymentGatewaysComponent } from './PaymentGateways.component';
+export { AnalyticsSalesComponent } from './AnalyticsSales.component';
+export { TaxSettingsComponent } from './TaxSettings.component';
+export { InventoryAlertsComponent } from './InventoryAlerts.component';
+export { ReviewStatusComponent } from './ReviewStatus.component';
+export { BrandManagementComponent } from './BrandManagement.component';
+export { ShippingRulesComponent } from './ShippingRules.component';
+export { UserActivityLogsComponent } from './UserActivityLogs.component';
+export { BannerManagementComponent } from './BannerManagement.component';
+export { SystemConfigComponent } from './SystemConfig.component';

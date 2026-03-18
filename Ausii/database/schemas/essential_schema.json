@@ -1,0 +1,8 @@
+{
+    "module": "essential",
+    "roles": ['admin', 'super-admin'],
+    "rbac": {
+        "admin": ["view_all", "edit_all", "delete_all", "access_console"],
+        "super-admin": ["*"]
+    }
+}

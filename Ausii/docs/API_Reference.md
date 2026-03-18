@@ -1,0 +1,1 @@
+# API Reference\n\nThe SuperApp API follows a clean module-role-page structure.\n- **Base URL**: `http://localhost:8000`\n- **Ecommerce**: `/ecommerce`\n- **Essential**: `/essential`\n- **Food**: `/food`\n- **Ride**: `/ride`\n- **Medical**: `/medical`\n
