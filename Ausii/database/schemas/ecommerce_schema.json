@@ -1,8 +1,0 @@
-{
-    "module": "ecommerce",
-    "roles": ['admin', 'super-admin', 'vendor'],
-    "rbac": {
-        "admin": ["view_all", "edit_all", "delete_all", "access_console"],
-        "super-admin": ["*"]
-    }
-}
