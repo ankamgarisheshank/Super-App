@@ -1,7 +1,21 @@
 packages:
+  # Shared packages & SDKs
+  - "packages/*"
+
+  # Frontend apps
   - "frontend/*"
   - "frontend/web"
+
+  # Backend services
   - "backend/gateway"
   - "backend/services/*"
-  - "packages/*"
+  - "backend/shared"
+
+  # AI modules
   - "ai/*"
+
+  # Database tooling (prisma/scripts treated as a package)
+  - "database/postgres"
+
+  # Tests (optional - include only if test packages have their own package.json)
+  # - "tests/*"
