@@ -1,7 +1,0 @@
-packages:
-  - "frontend/*"
-  - "frontend/web"
-  - "backend/gateway"
-  - "backend/services/*"
-  - "packages/*"
-  - "ai/*"
