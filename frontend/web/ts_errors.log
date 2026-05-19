@@ -1,0 +1,56 @@
+src/core/app-shell/components/Header/Breadcrumbs.tsx(3,1): error TS6133: 'cn' is declared but its value is never read.
+src/core/app-shell/components/Header/WorkspaceSwitcher.tsx(7,1): error TS6133: 'Can' is declared but its value is never read.
+src/core/app-shell/components/Sidebar/Sidebar.tsx(4,38): error TS2307: Cannot find module '../config/navigation.config' or its corresponding type declarations.
+src/core/app-shell/components/Sidebar/Sidebar.tsx(56,40): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/core/app-shell/components/Sidebar/SidebarItem.tsx(4,30): error TS2307: Cannot find module '../config/navigation.config' or its corresponding type declarations.
+src/core/providers/SocketProvider.tsx(2,27): error TS2307: Cannot find module '@integrations/websocket/socket.client' or its corresponding type declarations.
+src/core/providers/SocketProvider.tsx(6,39): error TS2551: Property 'token' does not exist on type 'AuthState'. Did you mean 'tokens'?
+src/core/routing/AppRouter.tsx(128,35): error TS2322: Type '"vendor_admin"' is not assignable to type 'UserRole'.
+src/core/routing/AppRouter.tsx(128,51): error TS2322: Type '"vendor_staff"' is not assignable to type 'UserRole'.
+src/hooks/useChannel.ts(2,27): error TS2307: Cannot find module '@integrations/websocket/socket.client' or its corresponding type declarations.
+src/hooks/useRealtime.ts(3,27): error TS2307: Cannot find module '@integrations/websocket/socket.client' or its corresponding type declarations.
+src/hooks/useRealtime.ts(4,43): error TS2307: Cannot find module '@integrations/websocket/socket.types' or its corresponding type declarations.
+src/integrations/websocket/socket.client.ts(15,43): error TS2551: Property 'token' does not exist on type 'AuthState'. Did you mean 'tokens'?
+src/services/analytics-service/analytics.api.ts(1,1): error TS6133: 'api' is declared but its value is never read.
+src/services/consumer-service/consumer.api.ts(1,1): error TS6133: 'api' is declared but its value is never read.
+src/services/consumer-service/consumer.api.ts(2,29): error TS6196: 'Restaurant' is declared but never used.
+src/services/delivery-service/delivery.api.ts(1,1): error TS6133: 'api' is declared but its value is never read.
+src/services/order-service/order.api.ts(1,1): error TS6133: 'api' is declared but its value is never read.
+src/services/user-service/user.mutations.ts(31,17): error TS6133: 'data' is declared but its value is never read.
+src/services/vendor-service/vendor.api.ts(1,1): error TS6133: 'api' is declared but its value is never read.
+src/services/vendor-service/vendor.api.ts(2,28): error TS6196: 'MenuItem' is declared but never used.
+src/shared/components/organisms/Charts/AreaChartBase.tsx(92,50): error TS2769: No overload matches this call.
+  Overload 1 of 4, '(value: string | number | Date): Date', gave the following error.
+    Argument of type 'string | number | undefined' is not assignable to parameter of type 'string | number | Date'.
+      Type 'undefined' is not assignable to type 'string | number | Date'.
+  Overload 2 of 4, '(value: string | number): Date', gave the following error.
+    Argument of type 'string | number | undefined' is not assignable to parameter of type 'string | number'.
+      Type 'undefined' is not assignable to type 'string | number'.
+src/shared/components/organisms/Charts/BarChartBase.tsx(78,50): error TS2769: No overload matches this call.
+  Overload 1 of 4, '(value: string | number | Date): Date', gave the following error.
+    Argument of type 'string | number | undefined' is not assignable to parameter of type 'string | number | Date'.
+      Type 'undefined' is not assignable to type 'string | number | Date'.
+  Overload 2 of 4, '(value: string | number): Date', gave the following error.
+    Argument of type 'string | number | undefined' is not assignable to parameter of type 'string | number'.
+      Type 'undefined' is not assignable to type 'string | number'.
+src/shared/components/organisms/GlobalModal/ModalRegistry.tsx(5,43): error TS2307: Cannot find module '../../../workspaces/super-admin-dashboard/modals/CreateUserModal' or its corresponding type declarations.
+src/shared/components/organisms/GlobalModal/modals/ConfirmDialogModal.tsx(3,24): error TS2307: Cannot find module '../../atoms/Button' or its corresponding type declarations.
+src/workspaces/consumer-workspace/pages/ConsumerDashboard.tsx(10,9): error TS6133: 'navigate' is declared but its value is never read.
+src/workspaces/consumer-workspace/restaurant/RestaurantCard.tsx(1,10): error TS6133: 'MapPin' is declared but its value is never read.
+src/workspaces/delivery-workspace/maps/LiveTrackingMap.tsx(44,10): error TS6133: 'MapUpdater' is declared but its value is never read.
+src/workspaces/delivery-workspace/pages/DeliveryDashboard.tsx(16,17): error TS4104: The type 'readonly ["deliveries", "queue"]' is 'readonly' and cannot be assigned to the mutable type 'unknown[]'.
+src/workspaces/delivery-workspace/pages/DeliveryDashboard.tsx(16,45): error TS4104: The type 'readonly ["deliveries", "drivers"]' is 'readonly' and cannot be assigned to the mutable type 'unknown[]'.
+src/workspaces/delivery-workspace/pages/DeliveryDashboard.tsx(21,17): error TS4104: The type 'readonly ["deliveries", "queue"]' is 'readonly' and cannot be assigned to the mutable type 'unknown[]'.
+src/workspaces/super-admin-dashboard/modals/CreateUserModal.tsx(8,1): error TS6133: 'UserRole' is declared but its value is never read.
+src/workspaces/super-admin-dashboard/modals/CreateUserModal.tsx(35,36): error TS2345: Argument of type '{ role: "super_admin" | "admin" | "manager" | "support_agent" | "user" | "vendor_admin" | "vendor_staff" | "driver" | "customer"; email: string; firstName: string; lastName: string; }' is not assignable to parameter of type 'CreateUserDTO'.
+  Types of property 'role' are incompatible.
+    Type '"super_admin" | "admin" | "manager" | "support_agent" | "user" | "vendor_admin" | "vendor_staff" | "driver" | "customer"' is not assignable to type 'UserRole'.
+      Type '"user"' is not assignable to type 'UserRole'.
+src/workspaces/super-admin-dashboard/pages/AdminDashboard.tsx(83,32): error TS2741: Property 'children' is missing in type '{ title: string; isLoading: true; }' but required in type 'WidgetContainerProps'.
+src/workspaces/super-admin-dashboard/pages/AdminDashboard.tsx(90,32): error TS2741: Property 'children' is missing in type '{ title: string; isLoading: true; }' but required in type 'WidgetContainerProps'.
+src/workspaces/super-admin-dashboard/pages/UsersPage.tsx(23,5): error TS2353: Object literal may only specify known properties, and 'limit' does not exist in type 'UserFilters'.
+src/workspaces/super-admin-dashboard/tables/UsersTable/columns.tsx(51,23): error TS2339: Property 'lastLogin' does not exist on type 'User'.
+src/workspaces/super-admin-dashboard/tables/UsersTable/columns.tsx(52,35): error TS2339: Property 'lastLogin' does not exist on type 'User'.
+src/workspaces/super-admin-dashboard/tables/UsersTable/UsersTable.tsx(3,21): error TS2305: Module '"@shared/types"' has no exported member 'PaginatedMeta'.
+src/workspaces/vendor-workspace/pages/VendorDashboard.tsx(6,17): error TS6133: 'TrendingUp' is declared but its value is never read.
+src/workspaces/vendor-workspace/pages/VendorDashboard.tsx(18,17): error TS4104: The type 'readonly ["vendor", "orders", "queue"]' is 'readonly' and cannot be assigned to the mutable type 'unknown[]'.
