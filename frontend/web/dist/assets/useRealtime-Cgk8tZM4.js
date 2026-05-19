@@ -1,0 +1,1 @@
+import{A as e,Z as t,et as n,o as r}from"./index-BBatFwQP.js";var i=n(t(),1);function a({event:t,queryKeys:n,onReceive:a}){let o=e();(0,i.useEffect)(()=>{let e=r.getSocket();if(!e)return;let i=e=>{a?.(e),n&&n.length>0&&n.forEach(e=>{o.invalidateQueries({queryKey:e})})};return e.on(t,i),()=>{e.off(t,i)}},[t,n,o,a])}export{a as t};
